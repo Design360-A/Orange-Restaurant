@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>الوجبات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>مطعم Orange </h1>
+            <nav>
+                <a href="index.html">الرئيسية</a>
+                <a href="AboutUs.html">من نحن</a>
+                <a href="Meals.html">الوجبات</a>
+            </nav>
+        </header>
+
+        <section class="box">
+            <h2>قائمة الوجبات</h2>
+
+            <table>
+                <tr>
+                    <th>الرمز</th>
+                    <th>الوجبة</th>
+                    <th>السعر</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار</th>
+                </tr>
+<tr>
+    <td>SU-006</td>
+    <td>شوربة عدس</td>
+    <td class="price">20000</td>
+    <td><button onclick="toggleDetails('details6')">تفاصيل</button></td>
+    <td><input type="checkbox" class="meal-check" data-name="شوربة عدس" data-price="20000"></td>
+</tr>
+<tr id="details6" class="details-row">
+    <td colspan="5"class="details-colum">
+        <table class="meal-table">
+            <tr>
+                <td class="meal-text" width="30%">
+                    <p><strong>المطبخ:</strong> عربي</p>
+                    <p><strong>التصنيف:</strong> شوربة</p>
+                    <p><strong>المكونات:</strong> عدس، بصل، كمون، ليمون</p>
+                </td>
+                <td width="70%">
+                    <img src="images/lentil.jpg" alt="lentil soup">
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<tr>
+    <td>CH-007</td>
+    <td>بُرك جبنة</td>
+    <td class="price">30000</td>
+    <td><button onclick="toggleDetails('details7')">تفاصيل</button></td>
+    <td><input type="checkbox" class="meal-check" data-name="بُرك جبنة" data-price="30000"></td>
+</tr>
+<tr id="details7" class="details-row">
+   
+	<td colspan="5"class="details-colum">
+        <table class="meal-table">
+            <tr>
+                <td class="meal-text" width="30%">
+                    <p><strong>المطبخ:</strong> عربي</p>
+                    <p><strong>التصنيف:</strong> معجنات</p>
+                    <p><strong>المكونات:</strong> جبنة، عجين، بقدونس</p>
+                </td>
+                <td width="70%">
+                    <img src="images/cheese.jpg" alt="cheese borek">
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+                <tr>
+                    <td>SF-001</td>
+                    <td>سمك مشوي لشخصين</td>
+                    <td class="price">110000</td>
+                    <td><button onclick="toggleDetails('details1')">تفاصيل</button></td>
+                    <td><input type="checkbox" class="meal-check" data-name="سمك مشوي " data-price="110000"></td>
+                </tr>
+                <tr id="details1" class="details-row">
+                    <td colspan="5"class="details-colum">
+					
+                     <table class="meal-table" width="100%">
+            <tr>
+                
+                  <td width="30%" class="meal-text">
+                    <p><strong>المطبخ:</strong> شرقي</p>
+                    <p><strong>التصنيف:</strong> مأكولات بحرية</p>
+                    <p><strong>المكونات:</strong> سمك، ليمون، بهارات، ثوم</p>
+                </td>
+                <td width="70%">
+                    <img src="images/fish.jpg" width="100%">
+                </td>
+
+                
+                
+
+            </tr>
+        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>CK-002</td>
+                    <td>دجاج مشوي</td>
+                    <td class="price">75000</td>
+                    <td><button onclick="toggleDetails('details2')">تفاصيل</button></td>
+                    <td><input type="checkbox" class="meal-check" data-name="دجاج مشوي" data-price="75000"></td>
+                </tr>
+                <tr id="details2" class="details-row">
+                    <td colspan="5" class="details-colum">
+                         <table class="meal-table">
+            <tr>
+
+                
+                <td class="meal-text" width="30%">
+                    <p><strong>المطبخ:</strong> عربي</p>
+                    <p><strong>التصنيف:</strong> دجاج</p>
+                    <p><strong>المكونات:</strong> دجاج، بهارات، بطاطا</p>
+                </td>
+
+               
+                <td width="70%">
+                    <img src="images/chicken.jpg" alt="chicken">
+                </td>
+
+            </tr>
+        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>MT-003</td>
+                    <td>كباب مشوي</td>
+                    <td class="price">95000</td>
+                    <td><button onclick="toggleDetails('details3')">تفاصيل</button></td>
+                    <td><input type="checkbox" class="meal-check" data-name="كباب مشوي" data-price="95000"></td>
+                </tr>
+                <tr id="details3" class="details-row">
+                      <td colspan="5" class="details-colum">
+
+                      <table class="meal-table">
+                      <tr>
+
+             
+                          <td class="meal-text" width="30%">
+                          <p><strong>المطبخ:</strong> شرقي</p>
+                          <p><strong>التصنيف:</strong> لحوم</p>
+                          <p><strong>المكونات:</strong> لحم، ملح، فلفل، خضار</p>
+                          </td>
+
+                
+                          <td width="70%">
+                          <img src="images/meat.jpg" alt="meat">
+                          </td>
+
+                       </tr>
+                       </table>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>RI-004</td>
+                    <td>أرز مع خضار</td>
+                    <td class="price">40000</td>
+                    <td><button onclick="toggleDetails('details4')">تفاصيل</button></td>
+                    <td><input type="checkbox" class="meal-check" data-name="أرز مع خضار" data-price="40000"></td>
+                </tr>
+                <tr id="details4" class="details-row">
+                    <td colspan="5" class="details-colum">
+					<table class="meal-table">
+					<tr>
+					 <td class="meal-text" width="30%">
+                        <p><strong>المطبخ:</strong> شرقي</p>
+                        <p><strong>التصنيف:</strong> نباتي</p>
+                        <p><strong>المكونات:</strong> أرز، جزر، بازلاء</p>
+					</td>
+					 <td width="70%">
+                        <img src="images/rice.jpg">
+						</td>
+						</tr>
+                       </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>SA-005</td>
+                    <td>سلطة شرقية</td>
+                    <td class="price">25000</td>
+                    <td><button onclick="toggleDetails('details5')">تفاصيل</button></td>
+                    <td><input type="checkbox" class="meal-check" data-name="سلطة شرقية" data-price="25000"></td>
+                </tr>
+                <tr id="details5" class="details-row">
+                    <td colspan="5" class="details-colum">
+
+                      <table class="meal-table">
+                      <tr>
+					  <td class="meal-text" width="30%">
+                        <p><strong>المطبخ:</strong> عربي</p>
+                        <p><strong>التصنيف:</strong> مقبلات</p>
+                        <p><strong>المكونات:</strong> بندورة، خيار، زيت زيتون</p>
+						</td>
+					 <td width="70%">
+                        <img src="images/salad.jpg">
+						</td>
+						</tr>
+                       </table>
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+            <button onclick="showForm()">متابعة</button>
+        </section>
+
+        <section class="box hidden" id="orderFormSection">
+            <h2>نموذج الطلب</h2>
+
+            <form onsubmit="return submitOrder()">
+                <label>الاسم الكامل:</label>
+                <input type="text" id="fullName">
+                <small id="nameError" class="error"></small>
+
+                <label>الرقم الوطني:</label>
+                <input type="text" id="nationalId">
+                <small id="idError" class="error"></small>
+
+                <label>تاريخ الولادة:</label>
+                <input type="date" id="birthDate">
+                <small id="birthError" class="error"></small>
+
+                <label>رقم الموبايل:</label>
+                <input type="text" id="mobile">
+                <small id="mobileError" class="error"></small>
+
+                <label>الإيميل:</label>
+                <input type="text" id="email">
+                <small id="emailError" class="error"></small>
+
+                <br><br>
+                <button type="submit">إرسال</button>
+            </form>
+        </section>
+
+        <section class="box hidden" id="resultSection">
+            <h2>الوجبات المختارة</h2>
+            <div id="result"></div>
+        </section>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js"></script>
+</body>
+</html>
