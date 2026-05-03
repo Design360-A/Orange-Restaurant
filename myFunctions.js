@@ -57,7 +57,14 @@ let isValid = true;
     }
 
     if (birthDate === "") {
-        document.getElementById("birthError").innerText = "";
+    document.getElementById("birthError").innerText = "";
+} else if (!birthDateRegex.test(birthDate)) {
+    document.getElementById("birthError").innerText =
+        "صيغة التاريخ يجب أن تكون dd-mm-yyyy";
+    isValid = false;
+} else {
+    document.getElementById("birthError").innerText = "";
+}
     }
 
     if (mobile !== "" && !mobileRegex.test(mobile)) {
