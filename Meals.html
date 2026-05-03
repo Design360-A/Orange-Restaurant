@@ -224,25 +224,29 @@
 
             <form onsubmit="return submitOrder()">
                 <label>الاسم الكامل:</label>
+				<small id="nameError" class="error"></small>
                 <input type="text" id="fullName">
-                <small id="nameError" class="error"></small>
+                
 
                 <label>الرقم الوطني:</label>
+				 <small id="idError" class="error"></small>
                 <input type="text" id="nationalId">
                 <small id="idError" class="error"></small>
 
                 <label>تاريخ الولادة:</label> 
-<input type="text" id="birthDate" placeholder="dd-mm-yyyy">				
 				<small id="birthError" class="error"></small>
-
+				<input type="text" id="birthDate" placeholder="dd-mm-yyyy">				
+				
 				
                 <label>رقم الموبايل:</label>
-                <input type="text" id="mobile">
-                <small id="mobileError" class="error"></small>
+				<small id="mobileError" class="error"></small>
 
+                <input type="text" id="mobile">
+                
                 <label>الإيميل:</label>
+				 <small id="emailError" class="error"></small>
                 <input type="text" id="email">
-                <small id="emailError" class="error"></small>
+               
 
                 <br><br>
                 <button type="submit">إرسال</button>
