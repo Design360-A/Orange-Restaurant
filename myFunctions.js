@@ -1,3 +1,4 @@
+function toggleDetails(rowId) { const row = document.getElementById(rowId); if (row.style.display === "table-row") { row.style.display = "none"; } else { row.style.display = "table-row"; } } function showForm() { const selectedMeals = document.querySelectorAll(".meal-check:checked"); if (selectedMeals.length === 0) { alert("يرجى اختيار وجبة واحدة على الأقل"); return; } document.getElementById("orderFormSection").classList.remove("hidden"); } function clearErrors() { document.getElementById("nameError").innerText = ""; document.getElementById("idError").innerText = ""; document.getElementById("birthError").innerText = ""; document.getElementById("mobileError").innerText = ""; document.getElementById("emailError").innerText = ""; }
 function submitOrder() {
     clearErrors();
 
