@@ -39,9 +39,12 @@ function submitOrder() {
     const email = document.getElementById("email").value.trim();
 
     const arabicNameRegex = /^[\u0621-\u064A\s]+$/;
-    const nationalIdRegex = /^\d{11}$/;
+    const nationalIdRegex = /^(0[1-9]|1[0-4])\d{9}$/;
     const mobileRegex = /^(09\d{8})$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const birthDateRegex = /^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-\d{4}$/;
+
+let isValid = true;
 
     if (fullName !== "" && !arabicNameRegex.test(fullName)) {
         document.getElementById("nameError").innerText = "الاسم يجب أن يحتوي على أحرف عربية فقط";
