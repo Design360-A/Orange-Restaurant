@@ -52,7 +52,7 @@ let isValid = true;
     }
 
     if (!nationalIdRegex.test(nationalId)) {
-        document.getElementById("idError").innerText = "الرقم الوطني يجب أن يكون 11 رقمًا";
+      document.getElementById("idError").innerText ="الرقم الوطني يجب أن يكون 11 رقمًا ويبدأ برمز محافظة من 01 إلى 14";
         isValid = false;
     }
 
