@@ -93,8 +93,7 @@ button:hover {
     display: none;
 }
 
-input[type="text"],
-input[type="date"] {
+input[type="text"] {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
